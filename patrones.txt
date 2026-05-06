@@ -1,0 +1,3 @@
+patrones a seguir:
+- menu y finales : sticky-footers-navbar
+- custom card de : features
