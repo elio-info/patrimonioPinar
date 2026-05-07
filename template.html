@@ -41,7 +41,8 @@
           d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
         ></path>
       </symbol>
-    
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="bootstrap" viewBox="0 0 118 94">
         <title>Bootstrap</title>
         <path
@@ -226,241 +227,188 @@
     </div>
   <!-- #endregion -->
   <!-- #region Cabecera menu -->
-    <header>      
-     
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fixed navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
   <!-- #endregion -->    
   <!-- #region Cuerpo -->
     <!-- Begin page content -->
-    
     <main class="flex-shrink-0">
-
-      <div class="container" id="up_ribbon">
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/imgs/main/unsplash-photo-1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Short title, long jacket
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
-              </div>
+      <div class="container">
+        <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Icon grid</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/imgs/main/unsplash-photo-2.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Much longer title that wraps to multiple lines
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>4d</small>
-                  </li>
-                </ul>
-              </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/imgs/main/unsplash-photo-3.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Another longer title belongs here
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#calendar3"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/imgs/main/logo-UPinar.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  NO se
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                      <use xlink:href="#home"></use>
-                    </svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#home"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#geo-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+              <use xlink:href="#tools"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="b-example-divider"></div>
-      
-      
-        <div class="container px-4 py-5" id="icon-grids">       
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 py-5" id="body_linkInfo">
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#cpu-fill"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#calendar3"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#home"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#speedometer2"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#toggles2"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#geo-fill"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                <use xlink:href="#tools"></use>
-              </svg>
-              <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                  Featured title
-                </h3>
-                <p>
-                  Paragraph of text beneath the heading to explain the heading.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      <div class="b-example-divider"></div>      
+      </div>
     </main>
   <!-- #endregion -->
   <!-- #region Finales--> 
-    <footer class="footer mt-auto py-1 my-1 bg-body-tertiary" id="patriFoot">
-     
+    <footer class="footer mt-auto py-1 bg-body-tertiary">
+       <div class="container">
+      <footer class="py-1 my-1">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2025 Company, Inc</p>
+      </footer>
+    </div>
     </footer>
   <!-- #endregion -->
     <script src="assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script> 
@@ -468,7 +416,6 @@
   </body>
      <script src="assets/stuff/menu.js"></script>
     <script>
-      setList_CenterArticles_Links('body_linkInfo')
-      set_Footer('patriFoot')
+      // alert('')
     </script>
 </html>
