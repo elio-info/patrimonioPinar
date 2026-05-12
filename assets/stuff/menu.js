@@ -1,15 +1,12 @@
 const list_items=[
-    {name:`Caracteristicas de Pinar del Rio.`, desc:`Animate a un enfoque distinto de lo conocido...`, icon:'geo-fill', lnk:''},
-    {name:`Literatura certificada.`, desc:'Toda una referencia de documentos que justifican este legado.', icon:'home', lnk:''},
-    {name:`Tradiciones locales.`, desc:`Historias que debes de conocer. No todo es tan tan...`, icon:'toggles2', lnk:''},
-    {name:`Documentales.`, desc:`Recorre filmicamente la localidad monumental.`, icon:'collection', lnk:''},
-    {name:`Lugares patrimoniales.`, desc:`Lo que perdura en el tiempo...`, icon:'calendar3', lnk:''},
-    {name:`Proyectos socioculturales.`, desc:`El movimiento cultural  juega su papel`, icon:'tools', lnk:''}
+    {ttl:'Geo_Pinar',name:`Caracteristicas de Pinar del Rio.`, desc:`Animate a un enfoque distinto de lo conocido...`, icon:'geo-fill', lnk:'01.geo/geo'},
+    {ttl:'Litera_Tur',name:`Literatura certificada.`, desc:'Toda una referencia de documentos que justifican este legado.', icon:'home', lnk:''},
+    {ttl:'Tradi_Cult',name:`Tradiciones locales.`, desc:`Historias que debes de conocer. No todo es tan tan...`, icon:'toggles2', lnk:''},
+    {ttl:'Docu_Mental',name:`Documentales.`, desc:`Recorre filmicamente la localidad monumental.`, icon:'collection', lnk:''},
+    {ttl:'Patrimonios',name:`Lugares patrimoniales.`, desc:`Lo que perdura en el tiempo...`, icon:'calendar3', lnk:''},
+    {ttl:'Proyectos',name:`Proyectos socioculturales.`, desc:`El movimiento cultural  juega su papel`, icon:'tools', lnk:''}
 ];
-
-
-function setMenu_Up(params) {
-    /**
+/**
      * <div class="col d-flex align-items-start">
             <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
               <use xlink:href="#bootstrap"></use>
@@ -24,7 +21,20 @@ function setMenu_Up(params) {
             </div>
           </div>
      */
+
+function setMenu_Up(params, posc) {
     
+   let menu_Up=`<ul class="nav nav-masthead"> ` ;
+   list_items.map((itm,indx)=>{
+      menu_Up +=`
+        <li class="nav-item">
+          <a href="${indx==posc?'#':itm.lnk}" class="nav-link ${indx==posc?'active':''}" ${indx==posc?'aria-current="page"':''}>${itm.ttl}</a>
+        </li>
+      `
+   });
+  menu_Up +=`</ul>`;
+  document.getElementById(params).innerHTML=menu_Up;
+   
 }
 
 function setList_CenterArticles_Links(params) {
@@ -63,7 +73,7 @@ function setList_CenterArticles_Links(params) {
               <p>
                 ${item.desc}
               </p>
-              <a href="#${item.lnk}" class="icon-link gap-1 icon-link-hover stretched-link">
+              <a href="${item.lnk}.patripi.html" class="icon-link gap-1 icon-link-hover stretched-link">
                 Continue leyendo >>>
                 
               </a>
