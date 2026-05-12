@@ -24,7 +24,11 @@ const list_items=[
 
 function setMenu_Up(params, posc) {
     
-   let menu_Up=`<ul class="nav nav-masthead"> ` ;
+   let menu_Up=`<ul class="nav nav-masthead"> 
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link " }>Inicio</a>
+        </li>
+   ` ;
    list_items.map((itm,indx)=>{
       menu_Up +=`
         <li class="nav-item">
