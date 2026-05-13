@@ -1,10 +1,14 @@
 const list_items=[
     {ttl:'Geo_Pinar',name:`Caracteristicas de Pinar del Rio.`, desc:`Animate a un enfoque distinto de lo conocido...`, icon:'geo-fill', lnk:'01.geo/geo'},
-    {ttl:'Litera_Tur',name:`Literatura certificada.`, desc:'Toda una referencia de documentos que justifican este legado.', icon:'home', lnk:''},
     {ttl:'Tradi_Cult',name:`Tradiciones locales.`, desc:`Historias que debes de conocer. No todo es tan tan...`, icon:'toggles2', lnk:''},
+    {ttl:'Litera_Tur',name:`Literatura certificada.`, desc:'Toda una referencia de documentos que justifican este legado.', icon:'home', lnk:''},
+    {ttl:'Patrim_Lugares',name:`Lugares patrimoniales.`, desc:`Lo que perdura en el tiempo...`, icon:'calendar3', lnk:''},
+    {ttl:'Patrim_Culinario',name:`Tradiciones culinarias locales.`, desc:`la cocina cubana tiene sus secretos, otro tanto la local...`, icon:'check2', lnk:''},
     {ttl:'Docu_Mental',name:`Documentales.`, desc:`Recorre filmicamente la localidad monumental.`, icon:'collection', lnk:''},
-    {ttl:'Patrimonios',name:`Lugares patrimoniales.`, desc:`Lo que perdura en el tiempo...`, icon:'calendar3', lnk:''},
-    {ttl:'Proyectos',name:`Proyectos socioculturales.`, desc:`El movimiento cultural  juega su papel`, icon:'tools', lnk:''}
+    
+    {ttl:'Proyectos',name:`Proyectos socioculturales.`, desc:`El movimiento cultural  juega su papel`, icon:'tools', lnk:''},
+    {ttl:'Organizadores',name:`Organizadores y Personal`, desc:`Personal responsable del orden patrimonial.Organizadores del territorio..`, icon:'people-circle', lnk:'08.prsn/prsn'}
+    
 ];
 /**
      * <div class="col d-flex align-items-start">
@@ -32,7 +36,7 @@ function setMenu_Up(params, posc) {
    list_items.map((itm,indx)=>{
       menu_Up +=`
         <li class="nav-item">
-          <a href="${indx==posc?'#':itm.lnk}" class="nav-link ${indx==posc?'active':''}" ${indx==posc?'aria-current="page"':''}>${itm.ttl}</a>
+          <a href="${indx==posc?'#':'../'+itm.lnk+'.patripi.html'}" class="nav-link ${indx==posc?'active':''}" ${indx==posc?'aria-current="page"':''}>${itm.ttl}</a>
         </li>
       `
    });
