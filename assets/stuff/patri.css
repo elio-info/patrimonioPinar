@@ -56,6 +56,12 @@
   --bs-border-style: solid
 }
 
+/* Center align the text within the three columns below the carousel */
+.centered {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .borderP{
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
