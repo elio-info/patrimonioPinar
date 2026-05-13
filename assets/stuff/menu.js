@@ -1,12 +1,12 @@
 const list_items=[
     {ttl:'Geo_Pinar',name:`Caracteristicas de Pinar del Rio.`, desc:`Animate a un enfoque distinto de lo conocido...`, icon:'geo-fill', lnk:'01.geo/geo'},
-    {ttl:'Tradi_Cult',name:`Tradiciones locales.`, desc:`Historias que debes de conocer. No todo es tan tan...`, icon:'toggles2', lnk:''},
-    {ttl:'Litera_Tur',name:`Literatura certificada.`, desc:'Toda una referencia de documentos que justifican este legado.', icon:'home', lnk:''},
-    {ttl:'Patrim_Lugares',name:`Lugares patrimoniales.`, desc:`Lo que perdura en el tiempo...`, icon:'calendar3', lnk:''},
-    {ttl:'Patrim_Culinario',name:`Tradiciones culinarias locales.`, desc:`la cocina cubana tiene sus secretos, otro tanto la local...`, icon:'check2', lnk:''},
-    {ttl:'Docu_Mental',name:`Documentales.`, desc:`Recorre filmicamente la localidad monumental.`, icon:'collection', lnk:''},
+    {ttl:'Tradi_Cult',name:`Tradiciones locales.`, desc:`Historias que debes de conocer. No todo es tan tan...`, icon:'toggles2', lnk:'02.trdc/trdc'},
+    {ttl:'Litera_Tur',name:`Literatura certificada.`, desc:'Toda una referencia de documentos que justifican este legado.', icon:'home', lnk:'03.ltrc/ltrc'},
+    {ttl:'Patrim_Lugares',name:`Lugares patrimoniales.`, desc:`Lo que perdura en el tiempo...`, icon:'calendar3', lnk:'04.ptrl/ptrl'},
+    {ttl:'Patrim_Culinario',name:`Tradiciones culinarias locales.`, desc:`la cocina cubana tiene sus secretos, otro tanto la local...`, icon:'check2', lnk:'05.ptrc/ptrc'},
+    {ttl:'Docu_Mental',name:`Documentales.`, desc:`Recorre filmicamente la localidad monumental.`, icon:'collection', lnk:'06.dcmt/dcmt'},
     
-    {ttl:'Proyectos',name:`Proyectos socioculturales.`, desc:`El movimiento cultural  juega su papel`, icon:'tools', lnk:''},
+    {ttl:'Proyectos',name:`Proyectos socioculturales.`, desc:`El movimiento cultural  juega su papel`, icon:'tools', lnk:'07.pryc/pryc'},
     {ttl:'Organizadores',name:`Organizadores y Personal`, desc:`Personal responsable del orden patrimonial.Organizadores del territorio..`, icon:'people-circle', lnk:'08.prsn/prsn'}
     
 ];

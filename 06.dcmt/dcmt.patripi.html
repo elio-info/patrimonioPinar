@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es" class="h-100" data-bs-theme="green">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Used to describe a lesson practice" />
+    <meta
+      name="author"
+      content="Datamining and Bootstrap contributors"
+    />
+    <meta name="generator" content="VS Code" />
+    <title>Educacion Patrimonial · Pnar del Rio</title>
+    
+    <link href="../assets/originals/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/stuff/sticky-footer-navbar.css" rel="stylesheet" />
+    <link href="../assets/stuff/patri.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+  <!-- #region Change mode & Icons-->    
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" aria-hidden="true">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" aria-hidden="true">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" aria-hidden="true">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" aria-hidden="true">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" aria-hidden="true">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="green"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" aria-hidden="true">
+              <use href="#circle-half"></use>
+            </svg>
+            Green
+            <svg class="bi ms-auto d-none" aria-hidden="true">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" aria-hidden="true">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" aria-hidden="true">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  <!-- #endregion -->
+  <!-- #region Cabecera menu -->
+  
+    <header id="menuTop" class="fixed-top d-flex justify-content-center py-4 bg-body-tertiary">      
+    </header>
+  <div class="container-fluid "></div>
+  <div class="b-example-divider"></div>
+   
+  <!-- #endregion -->    
+  <!-- #region Cuerpo -->
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="container px-4 py-5" id="icon-grid">
+          <div class="card mx-auto" style="max-width: 720px;">
+            <img src="mapinar.jpg" class="card-img-top img-fluid" alt="Patrimonio de Pinar del Rio" />
+             
+          </div>
+        </div>
+      </div>
+      <div class="b-example-divider"></div>
+        <div class="container">
+          
+          <div class="row mb-2" id="center_info">          
+          </div>            
+          
+        </div>
+      </div>
+    </main>
+  <!-- #endregion -->
+  <!-- #region Finales--> 
+    <footer class="footer mt-auto py-1 bg-body-tertiary" id="patriFoot">     
+    </footer>
+  <!-- #endregion -->
+    <script src="../assets/originals/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script> 
+    <script src="../assets/originals/js/color-modes.js"></script>
+  </body>
+  <script src="data.js"></script>
+     <script src="../assets/stuff/menu.js"></script>
+    <script>
+      setMenu_Up('menuTop',5);
+      create_CenterInfo('center_info');
+      set_Footer('patriFoot');
+    </script>
+</html>
